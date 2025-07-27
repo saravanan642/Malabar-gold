@@ -288,6 +288,10 @@ display: flex;
   border: solid silver 2px;
   display: flex;
 }
+ .total{
+  border:solid silver 2px;
+ }
+
 
 /* css end */
 

@@ -285,7 +285,7 @@ display: flex;
   padding: 40px;
 }
 .fotter{
-  border: none;
+  border: solid silver 2px;
   display: flex;
 }
 

@@ -1,0 +1,232 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Bar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+  background-color: #97005d; /* Magenta background */
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 50px;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none;
+}
+
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <label for="search">Search</label>
+    <div class="search-box">
+      <input type="text" id="search" placeholder=" ">
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Categories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fef6f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .category-card {
+      background-color: #fff;
+      border-radius: 25px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #eee;
+    }
+
+    .category-card .text {
+      padding: 15px;
+    }
+
+    .category-card .text span {
+      display: block;
+    }
+
+    .category-card .title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #5e3c1c;
+    }
+
+    .category-card .subtitle {
+      color: #a67c52;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="category-card">
+      <img src="chains.jpg" alt="Elegant Chains">
+      <div class="text">
+        <span class="subtitle">Elegant</span>
+        <span class="title">Chains</span>
+      </div>
+    </div>
+    <div class="category-card">
+      <img src="ring.jpg" alt="Stunning Ring">
+      <div class="text">
+        <span class="subtitle">Stunning</span>
+        <span class="title">Ring</span>
+      </div>
+    </div>
+    <div class="category-card">
+      <img src="mangalsutra.jpg" alt="Modern Mangalsutras">
+      <div class="text">
+        <span class="subtitle">Modern</span>
+        <span class="title">Mangalsutras</span>
+      </div>
+    </div>
+    <div class="category-card">
+      <img src="pendant.jpg" alt="Trendy Pendants">
+      <div class="text">
+        <span class="subtitle">Trendy</span>
+        <span class="title">Pendants</span>
+      </div>
+    </div>
+    <div class="category-card">
+      <img src="bangles.jpg" alt="Gorgeous Bangles">
+      <div class="text">
+        <span class="subtitle">Gorgeous</span>
+        <span class="title">Bangles</span>
+      </div>
+    </div>
+    <div class="category-card">
+      <img src="earrings.jpg" alt="Stylish Earrings">
+      <div class="text">
+        <span class="subtitle">Stylish</span>
+        <span class="title">Earrings</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Makes the webpage responsive to screen size -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    /* Main container using Flexbox */
+    .container {
+      display: flex;            /* Arrange children in a row by default */
+      flex-wrap: wrap;          /* Allow wrapping to next line */
+      gap: 10px;                /* Space between boxes */
+    }
+
+    /* Box styling */
+    .box {
+      flex: 1 1 100%;           /* Full width on small screens */
+      padding: 20px;            /* Space inside box */
+      background-color: lightblue; /* Box background color */
+      text-align: center;       /* Center text */
+    }
+
+    /* For tablets and medium screens */
+    @media (min-width: 500px) {
+      .box {
+        background-color: blue;        /* Two boxes per row */
+      }
+    }
+
+    /* For large desktops */
+    @media (min-width: 1024px) {
+      .box {
+        flex: 1 1 30%;          /* Three boxes per row */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Content starts here -->
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+</body>
+</html>
+

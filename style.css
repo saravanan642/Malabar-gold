@@ -321,3 +321,8 @@ display: flex;
   z-index: 2;
 }
 }
+
+input{
+  width:6000px;
+  height: 20%;
+}
